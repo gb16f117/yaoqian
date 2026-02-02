@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>摇签 - 一签一念</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>一签一念</h1>
+            <p class="subtitle">诚心求签</p>
+        </div>
+
+        <div class="content">
+            <div class="fortune-box">
+                <div class="fortune-icon">
+                    <!-- <div class="fortune-stick"></div>
+                    <div class="fortune-stick"></div>
+                    <div class="fortune-stick"></div> -->
+                    <div class="fortune-stick1">  <img src="./tupian.png"></div>
+                </div>
+                <p class="fortune-text">心诚则灵</p>
+            </div>
+
+            <button class="draw-btn" id="drawBtn">点击摇签</button>
+            <p class="hint">点击按钮开始摇签</p>
+        </div>
+
+        <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+            <div class="loading-content">
+                <div class="shaking-fortune"></div>
+                <p>正在为您求签...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

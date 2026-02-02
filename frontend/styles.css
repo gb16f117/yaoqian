@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 420px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.interpret-btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.interpret-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+}
+
+.interpretation-box {
+    background: #fff4e6;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: left;
+    border-left: 4px solid #feca57;
+    margin-top: 20px;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.interpretation-box h3 {
+    color: #feca57;
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.interpretation-box p {
+    color: #333;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 0px solid #a5a5a5;
+    background: rgba(248, 247, 252, 0.5);
+    border-radius: 0 0 20px 20px;
+    margin-top: 20px;
+}
+
+.back-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+}
+
+.back-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.content {
+    flex: 1;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fortune-box {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.fortune-icon {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.fortune-stick {
+    width: 6px;
+    height: 70px;
+    background: linear-gradient(to bottom, #8B4513, #D2691E);
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.fortune-text {
+    font-size: 18px;
+    color: #667eea;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.fortune-stick1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fortune-stick1 img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.draw-btn {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s;
+    margin-bottom: 20px;
+}
+.fortune-content {
+  white-space: pre-line;  /* 保留换行符并自动换行 */
+}
+
+.draw-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.5);
+}
+
+.draw-btn:active {
+    transform: scale(0.95);
+}
+
+.hint {
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 300px;
+}
+
+/* 加载遮罩 */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.loading-content {
+    text-align: center;
+    color: white;
+}
+
+.shaking-fortune {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 30px;
+    background-image: url('tupian.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: shake 0.5s infinite;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); */
+}
+
+@keyframes shake {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+}
+
+
+
+/* 签文结果页 */
+.fortune-result {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.fortune-level {
+    display: inline-block;
+    padding: 10px 30px;
+    background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+}
+
+.fortune-name {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.fortune-content {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: left;
+    border-left: 4px solid #667eea;
+}
+
+.fortune-content h3 {
+    color: #667eea;
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.fortune-content p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+
+
+
+/* 响应式 */
+@media (max-width: 380px) {
+    .container {
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .fortune-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .fortune-stick {
+        height: 60px;
+    }
+
+    .draw-btn {
+        width: 170px;
+        height: 170px;
+        font-size: 22px;
+    }
+
+    .fortune-name {
+        font-size: 28px;
+    }
+
+    .fortune-content {
+        padding: 20px;
+    }
+}
+
+/* 动画效果 */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.draw-btn:hover {
+    animation: pulse 2s infinite;
+}
+.source{
+    color: #868686;
+    font-size: 10px;
+    text-align:right;
+    line-height: 1.6;
+    max-width: 300px;
+    margin-right: 3em;
+}

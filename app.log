@@ -1,0 +1,39 @@
+nohup: ignoring input
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://192.168.170.75:5004
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 604-402-274
+222.131.107.31 - - [02/Feb/2026 10:32:50] "[36mGET / HTTP/1.1[0m" 304 -
+222.131.107.31 - - [02/Feb/2026 10:32:50] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+222.131.107.31 - - [02/Feb/2026 10:32:50] "[36mGET /tupian.png HTTP/1.1[0m" 304 -
+222.131.107.31 - - [02/Feb/2026 10:32:50] "[36mGET /app.js HTTP/1.1[0m" 304 -
+222.131.107.31 - - [02/Feb/2026 10:32:51] "POST /api/draw HTTP/1.1" 200 -
+222.131.107.31 - - [02/Feb/2026 10:32:54] "[36mGET /result.html HTTP/1.1[0m" 304 -
+222.131.107.31 - - [02/Feb/2026 10:32:54] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+222.131.107.31 - - [02/Feb/2026 10:32:54] "[36mGET /result.js HTTP/1.1[0m" 304 -
+222.131.107.31 - - [02/Feb/2026 10:33:00] "[36mGET /index.html HTTP/1.1[0m" 304 -
+222.131.107.31 - - [02/Feb/2026 10:33:00] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+222.131.107.31 - - [02/Feb/2026 10:33:00] "[36mGET /tupian.png HTTP/1.1[0m" 304 -
+222.131.107.31 - - [02/Feb/2026 10:33:00] "[36mGET /app.js HTTP/1.1[0m" 304 -
+170.106.180.246 - - [02/Feb/2026 11:54:17] "GET / HTTP/1.1" 200 -
+43.156.168.214 - - [02/Feb/2026 13:12:27] "GET / HTTP/1.1" 200 -
+35.203.210.83 - - [02/Feb/2026 13:39:01] "GET / HTTP/1.1" 200 -
+106.120.243.162 - - [02/Feb/2026 14:35:44] "[36mGET / HTTP/1.1[0m" 304 -
+106.120.243.162 - - [02/Feb/2026 14:35:44] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+106.120.243.162 - - [02/Feb/2026 14:35:44] "[36mGET /app.js HTTP/1.1[0m" 304 -
+106.120.243.162 - - [02/Feb/2026 14:35:44] "[36mGET /tupian.png HTTP/1.1[0m" 304 -
+106.120.243.162 - - [02/Feb/2026 14:35:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+106.120.243.162 - - [02/Feb/2026 14:35:48] "POST /api/draw HTTP/1.1" 200 -
+106.120.243.162 - - [02/Feb/2026 14:35:50] "[36mGET /result.html HTTP/1.1[0m" 304 -
+106.120.243.162 - - [02/Feb/2026 14:35:50] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+106.120.243.162 - - [02/Feb/2026 14:35:50] "[36mGET /result.js HTTP/1.1[0m" 304 -
+106.120.243.162 - - [02/Feb/2026 14:36:07] "[36mGET /index.html HTTP/1.1[0m" 304 -
+106.120.243.162 - - [02/Feb/2026 14:36:07] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+106.120.243.162 - - [02/Feb/2026 14:36:07] "[36mGET /app.js HTTP/1.1[0m" 304 -
+106.120.243.162 - - [02/Feb/2026 14:36:07] "[36mGET /tupian.png HTTP/1.1[0m" 304 -
